@@ -10,6 +10,8 @@ import { AboutComponent } from './components/about/about.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { AddPanelComponent } from './components/add-panel/add-panel.component';
 import { CDKFeaturesComponent } from './components/cdk-features/cdk-features.component';
+import { AboutMoreComponent } from './components/about-more/about-more.component';
+import { BlogComponent } from './components/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { CDKFeaturesComponent } from './components/cdk-features/cdk-features.com
     AboutComponent,
     PageNotFoundComponent,
     AddPanelComponent,
-    CDKFeaturesComponent
+    CDKFeaturesComponent,
+    AboutMoreComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
