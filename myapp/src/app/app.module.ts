@@ -12,6 +12,7 @@ import { AddPanelComponent } from './components/add-panel/add-panel.component';
 import { CDKFeaturesComponent } from './components/cdk-features/cdk-features.component';
 import { AboutMoreComponent } from './components/about-more/about-more.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BlogComponent } from './components/blog/blog.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
