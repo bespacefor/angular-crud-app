@@ -67,12 +67,19 @@ button {
 }
 
 .navbar {
+  color: darkturquoise;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 1rem 3rem;
   margin-bottom: 1rem;
   background: darkviolet;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
   &__list {
     display: flex;

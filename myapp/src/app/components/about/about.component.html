@@ -7,3 +7,7 @@
   <a mat-stroked-button color="primary" [routerLink]="['/about', 'more']">Learn more...</a>
 </p>
 <router-outlet></router-outlet>
+<hr />
+<button (click)="goHome()" mat-mini-fab color="primary" aria-label="Example icon button with a home icon">
+  <mat-icon>home</mat-icon>
+</button>

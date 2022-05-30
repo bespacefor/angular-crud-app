@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-blog',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent implements OnInit {
+  constructor(private router: Router) { }
 
-  constructor() { }
+  goHome() {
+    this.router.navigate(['/'])
+  }
 
   ngOnInit(): void {
   }
