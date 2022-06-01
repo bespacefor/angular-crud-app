@@ -7,16 +7,18 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 const MaterialComponents = [
   MatButtonModule,
   MatIconModule,
   MatMenuModule,
   MatInputModule,
-  MatDatepickerModule,
+  MatDatepickerModule, 
   MatNativeDateModule,
   MatSidenavModule,
-  MatProgressSpinnerModule
+  MatProgressSpinnerModule,
+  ScrollingModule
 ];
 
 @NgModule({
