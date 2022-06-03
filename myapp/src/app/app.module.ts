@@ -14,6 +14,8 @@ import { CDKFeaturesComponent } from './components/cdk-features/cdk-features.com
 import { AboutMoreComponent } from './components/about-more/about-more.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { MaterialModule } from './material/material.module';
+import { EditPanelComponent } from './components/edit-panel/edit-panel.component';
+import { ViewPanelComponent } from './components/view-panel/view-panel.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { MaterialModule } from './material/material.module';
     AddPanelComponent,
     CDKFeaturesComponent,
     AboutMoreComponent,
-    BlogComponent
+    BlogComponent,
+    EditPanelComponent,
+    ViewPanelComponent
   ],
   imports: [
     BrowserModule,
