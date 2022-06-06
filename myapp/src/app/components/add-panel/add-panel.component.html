@@ -1,14 +1,61 @@
-<p>add-panel works!</p>
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <h2>Create card</h2>
 
-<!-- <div class="mat-typography">
-  <h3>Add new contact
-    <a mat-mini-fab color="primary" routerLink="/contacts/add">
-      <mat-icon color="accent">person_add</mat-icon>
-    </a>
-  </h3>
-  <p class="mat-body-2">
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi praesentium perspiciatis doloremque est, autem
-    magnam earum iure. Atque eos assumenda officia culpa repellat consequatur, rerum quis eum, voluptas ullam
-    voluptatum?
-  </p>
-</div> -->
+  <div class="form-control">
+    <label for="title">Article title: </label>
+    <input id="title" type="text" formControlName="title">
+    <!-- <div *ngIf="form.get('title').touched && form.get('title').invalid" class="validation">
+      <p *ngIf="form.get('title').errors.required">
+        Type article title
+      </p>
+    </div> -->
+  </div>
+
+  <div class="form-control">
+    <label>Article body: </label>
+  </div>
+
+  <!-- <div class="form-control" [ngClass]="{invalid: form.get('author').touched && form.get('author').invalid}">
+    <label for="author">Created by: </label>
+    <input id="author" type="text" formControlName="author">
+    <div *ngIf="form.get('author').touched && form.get('author').invalid" class="validation">
+      <p *ngIf="form.get('author').errors.required">
+        Type article author
+      </p>
+    </div>
+  </div> -->
+
+  <button type="submit" [disabled]="form.invalid">Add article</button>
+</form>
+
+
+
+<!-- <form [formGroup]="form" (ngSubmit)="submit()">
+  <h2>Create card</h2>
+
+  <div class="form-control" [ngClass]="{invalid: form.get('title').touched && form.get('title').invalid}">
+    <label for="title">Article title: </label>
+    <input id="title" type="text" formControlName="title">
+    <div *ngIf="form.get('title').touched && form.get('title').invalid" class="validation">
+      <p *ngIf="form.get('title').errors.required">
+        Type article title
+      </p>
+    </div>
+  </div>
+
+  <div class="form-control">
+    <label>Article body: </label>
+  </div>
+
+  <div class="form-control" [ngClass]="{invalid: form.get('author').touched && form.get('author').invalid}">
+    <label for="author">Created by: </label>
+    <input id="author" type="text" formControlName="author">
+    <div *ngIf="form.get('author').touched && form.get('author').invalid" class="validation">
+      <p *ngIf="form.get('author').errors.required">
+        Type article author
+      </p>
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="form.invalid">Add article</button>
+</form> -->

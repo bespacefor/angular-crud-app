@@ -13,7 +13,7 @@ import { ViewPanelComponent } from './components/view-panel/view-panel.component
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'blog', component: BlogComponent },
-  { path: 'blog/add', component: AddPanelComponent },
+  { path: 'add', component: AddPanelComponent },
   { path: 'blog/:id/edit', component: EditPanelComponent },
   { path: 'blog/:id', component: ViewPanelComponent },
   {
