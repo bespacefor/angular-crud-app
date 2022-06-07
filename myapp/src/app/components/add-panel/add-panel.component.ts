@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Article } from 'src/app/models/interface';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-panel',
@@ -11,7 +12,7 @@ export class AddPanelComponent implements OnInit {
 
   form!: FormGroup;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   // ngOnInit(): void {
   // }
@@ -37,6 +38,11 @@ export class AddPanelComponent implements OnInit {
     }
 
     console.log(article)
+  }
+
+
+  goHome() {
+    this.router.navigate(['/'])
   }
 
 }

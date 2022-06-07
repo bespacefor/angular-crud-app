@@ -4,6 +4,7 @@
     <button mat-button [matMenuTriggerFor]="menu">Menu</button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item (click)="goToBlog()">Blog</button>
+      <button mat-menu-item (click)="goToAddPanel()">Create card</button>
       <button mat-menu-item (click)="goToAboutPage()">About us</button>
       <button mat-menu-item (click)="goToCDKPage()">CDK features</button>
     </mat-menu>
@@ -18,6 +19,7 @@
     <li><button>Logout</button></li>
   </ul>
 </nav>
+
 <div class="wrapper">
   <router-outlet></router-outlet>
 </div>

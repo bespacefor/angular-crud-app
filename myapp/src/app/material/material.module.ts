@@ -14,7 +14,7 @@ const MaterialComponents = [
   MatIconModule,
   MatMenuModule,
   MatInputModule,
-  MatDatepickerModule, 
+  MatDatepickerModule,
   MatNativeDateModule,
   MatSidenavModule,
   MatProgressSpinnerModule,

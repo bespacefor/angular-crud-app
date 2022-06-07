@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent implements OnInit {
+
   constructor(private router: Router) { }
 
   goHome() {

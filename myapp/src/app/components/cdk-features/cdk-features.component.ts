@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./cdk-features.component.scss']
 })
 export class CDKFeaturesComponent implements OnInit {
+  
   constructor(private router: Router) { }
 
   goHome() {
