@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Article } from 'src/app/models/interface';
 import { Router } from '@angular/router';
+import { Article } from 'src/app/models/interface';
 
 @Component({
   selector: 'app-create',
@@ -13,9 +13,6 @@ export class CreateComponent implements OnInit {
   form!: FormGroup;
 
   constructor(private router: Router) { }
-
-  // ngOnInit(): void {
-  // }
 
   ngOnInit() {
     this.form = new FormGroup({
