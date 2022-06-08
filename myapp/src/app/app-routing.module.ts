@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { HomeComponent } from './components/home/home.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { CreateComponent } from './components/create/create.component';
 import { AboutComponent } from './components/about/about.component';
 import { AboutMoreComponent } from './components/about-more/about-more.component';
 import { CDKFeaturesComponent } from './components/cdk-features/cdk-features.component';
@@ -13,7 +15,7 @@ import { ViewPanelComponent } from './components/view-panel/view-panel.component
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'blog', component: BlogComponent },
-  { path: 'add', component: AddPanelComponent },
+  { path: 'create', component: CreateComponent },
   { path: 'blog/:id/edit', component: EditPanelComponent },
   { path: 'blog/:id', component: ViewPanelComponent },
   {

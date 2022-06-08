@@ -8,17 +8,17 @@ import { Router } from '@angular/router';
 })
 
 export class AppComponent implements OnInit {
-  
+
   title = 'myapp';
 
   constructor(private router: Router) { }
 
-  goToBlog() {
+  goToBlogPage() {
     this.router.navigate(['/blog'])
   }
 
-  goToAddPanel() {
-    this.router.navigate(['/add'])
+  goToCreatePage() {
+    this.router.navigate(['/create'])
   }
 
   goToAboutPage() {
