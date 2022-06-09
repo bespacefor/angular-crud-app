@@ -6,7 +6,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -72,17 +73,22 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
   background: darkviolet;
 
   &__flex {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+
+    h1 {
+      margin: 0;
+    }
   }
 
   &__list {
     display: flex;
+    align-items: center;
 
     .active a {
       color: white;

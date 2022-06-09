@@ -1,13 +1,17 @@
 <nav class="navbar">
   <div class="navbar__flex">
     <h1><a [routerLink]="['/']">Logo</a></h1>
-    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item (click)="goToBlogPage()">Blog</button>
-      <button mat-menu-item (click)="goToCreatePage()">Create</button>
-      <button mat-menu-item (click)="goToAboutPage()">About us</button>
-      <button mat-menu-item (click)="goToCDKPage()">CDK features</button>
-    </mat-menu>
+    <div class="navbar__menu-button">
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon color="accent">more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="goToBlogPage()">Blog</button>
+        <button mat-menu-item (click)="goToCreatePage()">Create</button>
+        <button mat-menu-item (click)="goToAboutPage()">About us</button>
+        <button mat-menu-item (click)="goToCDKPage()">CDK features</button>
+      </mat-menu>
+    </div>
   </div>
   <ul class="navbar__list">
     <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/']">Home</a></li>
