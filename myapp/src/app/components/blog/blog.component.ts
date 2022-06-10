@@ -28,4 +28,9 @@ export class BlogComponent implements OnInit {
     //console.log('Card', card)
   }
 
+  removeCard(id: number) {
+    console.log('Id to remove', id);
+    this.cards = this.cards.filter(c => c.id !== id)
+  }
+
 }

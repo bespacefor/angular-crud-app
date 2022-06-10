@@ -12,7 +12,8 @@ import { EditPanelComponent } from './components/edit-panel/edit-panel.component
 import { ViewPanelComponent } from './components/view-panel/view-panel.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'create', component: CreateComponent },
   { path: 'blog/:id/edit', component: EditPanelComponent },

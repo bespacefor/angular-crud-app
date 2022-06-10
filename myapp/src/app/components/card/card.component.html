@@ -1,5 +1,10 @@
 <div class="section">
-  <h2>{{card.title}}</h2>
-  <p>{{card.text}}</p>
-  <button [routerLink]="['/blog', 12345]" mat-flat-button color="primary">Details</button>
+  <div class="section__content">
+    <h2>{{card.title}}</h2>
+    <p>{{card.text}}</p>
+  </div>
+  <div class="section__controls">
+    <button [routerLink]="['/blog', 12345]" mat-flat-button color="primary">Details</button>
+    <button mat-flat-button color="basic" (click)="removeCard()">Delete</button>
+  </div>
 </div>
