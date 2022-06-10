@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-blog',
@@ -8,11 +7,7 @@ import { Router } from '@angular/router';
 })
 export class BlogComponent implements OnInit {
 
-  constructor(private router: Router) { }
-
-  goHome() {
-    this.router.navigate(['/'])
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }

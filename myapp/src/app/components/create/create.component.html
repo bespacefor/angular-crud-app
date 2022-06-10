@@ -1,5 +1,5 @@
-<button routerLink="/blog" mat-raised-button color="accent">Blog</button>
-<hr>
+<!-- <button routerLink="/blog" mat-raised-button color="primary">Blog</button>
+<hr> -->
 
 <form [formGroup]="form" (ngSubmit)="submit()">
   <h2>Create card</h2>
@@ -30,11 +30,6 @@
 
   <button type="submit" [disabled]="form.invalid">Add article</button>
 </form>
-
-<hr>
-<button (click)="goHome()" mat-mini-fab color="primary">
-  <mat-icon>home</mat-icon>
-</button>
 
 <!-- <form [formGroup]="form" (ngSubmit)="submit()">
   <h2>Create card</h2>

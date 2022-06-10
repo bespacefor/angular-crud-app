@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cdk-features',
@@ -7,12 +6,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./cdk-features.component.scss']
 })
 export class CDKFeaturesComponent implements OnInit {
-  
-  constructor(private router: Router) { }
 
-  goHome() {
-    this.router.navigate(['/'])
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }

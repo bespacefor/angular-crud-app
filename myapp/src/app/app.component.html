@@ -24,6 +24,36 @@
   </ul>
 </nav>
 
-<div class="wrapper">
-  <router-outlet></router-outlet>
-</div>
+<mat-drawer-container class="mat-container" autosize>
+  <mat-drawer #drawer class="mat-sidenav" mode="side">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <button class="toggle-calendar-button" mat-flat-button color="primary" (click)="showFiller = !showFiller"
+      mat-raised-button>
+      Toggle calendar
+    </button>
+    <p *ngIf="showFiller">
+      <mat-form-field color="accent" appearance="fill">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker1">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+      </mat-form-field>
+    </p>
+  </mat-drawer>
+
+  <div class="mat-sidenav-content">
+    <div class="wrapper">
+      <router-outlet></router-outlet>
+      <hr>
+      <div class="footer-nav">
+        <button class="mat-toggle-button" type="button" mat-flat-button color="accent" (click)="drawer.toggle()">
+          Toggle sidenav
+        </button>
+        <button routerLink="/" mat-mini-fab color="primary">
+          <mat-icon>home</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</mat-drawer-container>

@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 
 export class AppComponent implements OnInit {
 
+  showFiller = false;
+
   title = 'myapp';
 
   constructor(private router: Router) { }

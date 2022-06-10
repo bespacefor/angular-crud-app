@@ -7,12 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  
-  constructor(private router: Router) { }
 
-  goHome() {
-    this.router.navigate(['/'])
-  }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }

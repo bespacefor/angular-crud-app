@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
 import { Article } from 'src/app/models/interface';
 
 @Component({
@@ -12,7 +11,7 @@ export class CreateComponent implements OnInit {
 
   form!: FormGroup;
 
-  constructor(private router: Router) { }
+  constructor() { }
 
   ngOnInit() {
     this.form = new FormGroup({
@@ -35,10 +34,6 @@ export class CreateComponent implements OnInit {
     }
 
     console.log(article)
-  }
-
-  goHome() {
-    this.router.navigate(['/'])
   }
 
 }
