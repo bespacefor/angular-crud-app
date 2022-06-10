@@ -4,28 +4,12 @@
 <hr> -->
 
 <!-- ADD PANEL -->
-<h2>Add new card
-  <button mat-mini-fab routerLink="/create" color="accent">
-    <mat-icon>person_add</mat-icon>
-  </button>
-</h2>
-<p>
-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi praesentium perspiciatis doloremque est, autem magnam
-  earum iure. Atque eos assumenda officia culpa repellat consequatur, rerum quis eum, voluptas ullam voluptatum?
-</p>
-
+<app-add-panel (onAdd)="updateCards($event)"></app-add-panel>
 <hr>
 
 <!-- SEARCH PANEL -->
-<h2>Search panel</h2>
-<form action="#">
-  <input class="form-control" placeholder="Search user" type="text">
-  <input class="btn" type="submit" value="Search">
-</form>
-
+<app-search-panel></app-search-panel>
 <hr>
 
 <!-- CARDS -->
-<app-card></app-card>
-<app-card></app-card>
-<app-card></app-card>
+<app-card *ngFor="let c of cards" [card]="c"></app-card>

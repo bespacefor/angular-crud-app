@@ -1,1 +1,10 @@
-<p>add-panel works!</p>
+<h2>New article
+  <!-- <button mat-mini-fab routerLink="/create" color="accent">
+    <mat-icon>description</mat-icon>
+  </button> -->
+</h2>
+<div>
+  <input type="text" class="form-control" placeholder="Title..." [(ngModel)]="title">
+  <input type="text" class="form-control" placeholder="Text..." [(ngModel)]="text">
+  <button type="submit" (click)="addCard()">Add article</button>
+</div>

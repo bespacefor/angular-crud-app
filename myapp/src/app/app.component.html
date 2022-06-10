@@ -1,9 +1,8 @@
 <nav class="navbar">
   <div class="navbar__flex">
-    <h1><a [routerLink]="['/']">Logo</a></h1>
     <div class="navbar__menu-button">
       <button mat-icon-button [matMenuTriggerFor]="menu">
-        <mat-icon color="accent">more_vert</mat-icon>
+        <mat-icon color="accent">apps</mat-icon>
       </button>
       <mat-menu #menu="matMenu">
         <button mat-menu-item (click)="goToBlogPage()">Blog</button>
@@ -12,6 +11,7 @@
         <button mat-menu-item (click)="goToCDKPage()">CDK features</button>
       </mat-menu>
     </div>
+    <h1><a [routerLink]="['/']">Logo</a></h1>
   </div>
   <ul class="navbar__list">
     <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/']">Home</a></li>
@@ -26,7 +26,7 @@
 
 <mat-drawer-container class="mat-container" autosize>
   <mat-drawer #drawer class="mat-sidenav" mode="side">
-    <p>Lorem ipsum dolor sit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     <button class="toggle-calendar-button" mat-flat-button color="primary" (click)="showFiller = !showFiller"
       mat-raised-button>
       Toggle calendar
