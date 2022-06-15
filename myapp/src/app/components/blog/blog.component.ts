@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-export interface Card {
-  title: string
-  text: string
-  id?: number
-}
+import { Card } from 'src/app/interfaces/interface';
 
 @Component({
   selector: 'app-blog',
@@ -14,7 +9,6 @@ export interface Card {
 export class BlogComponent implements OnInit {
 
   search = ''
-  // searchField = 'title'
 
   cards: Card[] = [
     { title: 'Introduction to the Angular Docs', text: 'Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.', id: 1 },

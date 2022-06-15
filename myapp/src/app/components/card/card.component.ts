@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output, SimpleChanges } from '@angular/core';
-import { Card } from '../blog/blog.component';
+import { Card } from 'src/app/interfaces/interface';
 
 @Component({
   selector: 'app-card',

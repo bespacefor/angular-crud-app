@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { Card } from '../blog/blog.component';
+import { Card } from 'src/app/interfaces/interface';
 
 @Component({
   selector: 'app-add-panel',
