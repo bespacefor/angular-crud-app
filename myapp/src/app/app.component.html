@@ -26,7 +26,7 @@
 
 <mat-drawer-container class="mat-container" autosize>
   <mat-drawer #drawer class="mat-sidenav" mode="side">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h2>{{ date | date: "fullDate" }}</h2>
     <button class="toggle-calendar-button" mat-flat-button color="primary" (click)="showFiller = !showFiller"
       mat-raised-button>
       Toggle calendar

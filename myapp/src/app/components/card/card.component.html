@@ -1,7 +1,7 @@
 <div class="section">
   <div class="section__content">
-    <h2>{{card.title}}</h2>
-    <p>{{card.text}}</p>
+    <h2>{{ card.title }}</h2>
+    <p>{{ card.text | titlecase }}</p>
   </div>
   <div class="section__controls">
     <button [routerLink]="['/blog', 12345]" mat-flat-button color="primary">Details</button>

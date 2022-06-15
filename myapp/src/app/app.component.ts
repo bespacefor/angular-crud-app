@@ -13,6 +13,8 @@ export class AppComponent implements OnInit {
 
   title = 'myapp';
 
+  date: Date = new Date();
+
   constructor(private router: Router) { }
 
   goToBlogPage() {
