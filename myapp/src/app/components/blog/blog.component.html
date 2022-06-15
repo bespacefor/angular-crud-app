@@ -8,8 +8,11 @@
 <hr>
 
 <!-- SEARCH PANEL -->
-<app-search-panel></app-search-panel>
-<hr>
+<!-- <app-search-panel></app-search-panel> -->
+<h2>Search article</h2>
+<input type="text" [(ngModel)]="search" class="form-control" placeholder="Search by...">
+<!-- <button (click)="searchField = 'title'">Title</button>
+<button (click)="searchField = 'text'">Text</button> -->
 
 <!-- CARDS -->
-<app-card *ngFor="let c of cards" [card]="c" (onRemove)="removeCard($event)"></app-card>
+<app-card *ngFor="let c of cards | filter:search" [card]="c" (onRemove)="removeCard($event)"></app-card>

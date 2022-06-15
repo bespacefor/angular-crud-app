@@ -15,9 +15,10 @@ import { AboutMoreComponent } from './components/about-more/about-more.component
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CDKFeaturesComponent } from './components/cdk-features/cdk-features.component';
 import { AddPanelComponent } from './components/add-panel/add-panel.component';
-import { SearchPanelComponent } from './components/search-panel/search-panel.component';
+
 import { EditPanelComponent } from './components/edit-panel/edit-panel.component';
 import { ViewPanelComponent } from './components/view-panel/view-panel.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -31,9 +32,9 @@ import { ViewPanelComponent } from './components/view-panel/view-panel.component
     PageNotFoundComponent,
     CDKFeaturesComponent,
     AddPanelComponent,
-    SearchPanelComponent,
     EditPanelComponent,
-    ViewPanelComponent
+    ViewPanelComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

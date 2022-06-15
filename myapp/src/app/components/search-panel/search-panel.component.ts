@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+// import { Component, OnInit } from '@angular/core';
 
-@Component({
-  selector: 'app-search-panel',
-  templateUrl: './search-panel.component.html',
-  styleUrls: ['./search-panel.component.scss']
-})
-export class SearchPanelComponent implements OnInit {
+// @Component({
+//   selector: 'app-search-panel',
+//   templateUrl: './search-panel.component.html',
+//   styleUrls: ['./search-panel.component.scss']
+// })
+// export class SearchPanelComponent implements OnInit {
 
-  constructor() { }
+//   search = ''
 
-  ngOnInit(): void {
-  }
+//   constructor() { }
 
-}
+//   ngOnInit(): void {
+//   }
+
+// }

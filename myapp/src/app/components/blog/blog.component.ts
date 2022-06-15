@@ -13,6 +13,9 @@ export interface Card {
 })
 export class BlogComponent implements OnInit {
 
+  search = ''
+  // searchField = 'title'
+
   cards: Card[] = [
     { title: 'Introduction to the Angular Docs', text: 'Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.', id: 1 },
     { title: 'What is Angular?', text: 'This topic can help you understand Angular: what Angular is, what advantages it provides, and what you might expect as you start to build your applications. Angular is a development platform, built on TypeScript.', id: 2 },
