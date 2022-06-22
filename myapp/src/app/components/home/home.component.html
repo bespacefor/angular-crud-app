@@ -3,3 +3,32 @@
   expedita iure? Esse aliquid adipisci, laboriosam, magnam dolore et ea in, placeat distinctio doloribus dolorum iure at
   id nisi enim aliquam deserunt facere unde voluptate. Repudiandae fugit doloribus doloremque sint expedita harum maxime
   distinctio dolores, sequi dolor.</p>
+
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <!-- Position Column -->
+  <ng-container matColumnDef="position">
+    <mat-header-cell *matHeaderCellDef class="mat-table-header"> № </mat-header-cell>
+    <mat-cell *matCellDef="let element" class="mat-table-content"> {{element.position}} </mat-cell>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef class="mat-table-header"> Name </mat-header-cell>
+    <mat-cell *matCellDef="let element" class="mat-table-content"> {{element.name}} </mat-cell>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="weight">
+    <mat-header-cell *matHeaderCellDef class="mat-table-header"> Weight </mat-header-cell>
+    <mat-cell *matCellDef="let element" class="mat-table-content"> {{element.weight}} </mat-cell>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="symbol">
+    <mat-header-cell *matHeaderCellDef class="mat-table-header"> Symbol </mat-header-cell>
+    <mat-cell *matCellDef="let element" class="mat-table-content"> {{element.symbol}} </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>

@@ -7,6 +7,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatTableModule } from '@angular/material/table';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 
 const MaterialComponents = [
@@ -18,6 +19,7 @@ const MaterialComponents = [
   MatNativeDateModule,
   MatSidenavModule,
   MatProgressSpinnerModule,
+  MatTableModule,
   ScrollingModule
 ];
 
