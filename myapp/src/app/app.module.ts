@@ -20,6 +20,7 @@ import { AddPanelComponent } from './components/add-panel/add-panel.component';
 import { EditPanelComponent } from './components/edit-panel/edit-panel.component';
 import { ViewPanelComponent } from './components/view-panel/view-panel.component';
 import { FilterPipe } from './pipes/filter.pipe';
+import { MaterialTableComponent } from './components/material-table/material-table.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     AddPanelComponent,
     EditPanelComponent,
     ViewPanelComponent,
-    FilterPipe
+    FilterPipe,
+    MaterialTableComponent
   ],
   imports: [
     BrowserModule,

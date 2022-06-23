@@ -7,8 +7,10 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { MatTableModule } from '@angular/material/table';
-import { ScrollingModule } from '@angular/cdk/scrolling';
+// import { MatTableModule } from '@angular/material/table';
+// import { MatSortModule } from '@angular/material/sort';
+// import { MatPaginatorModule } from '@angular/material/paginator';
+// import { ScrollingModule } from '@angular/cdk/scrolling';
 
 const MaterialComponents = [
   MatButtonModule,
@@ -19,8 +21,10 @@ const MaterialComponents = [
   MatNativeDateModule,
   MatSidenavModule,
   MatProgressSpinnerModule,
-  MatTableModule,
-  ScrollingModule
+  // MatTableModule,
+  // MatSortModule,
+  // MatPaginatorModule,
+  // ScrollingModule
 ];
 
 @NgModule({
