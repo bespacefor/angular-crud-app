@@ -1,4 +1,7 @@
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 
 export interface UserData {
   id: string;
@@ -17,6 +20,7 @@ const FRUITS: string[] = [
   'pomegranate',
   'pineapple',
 ];
+
 const NAMES: string[] = [
   'Maia',
   'Asher',
@@ -41,15 +45,18 @@ const NAMES: string[] = [
 
 @Component({
   selector: 'app-material-table',
-  styleUrls: ['./material-table.component.scss'],
   templateUrl: './material-table.component.html',
+  styleUrls: ['./material-table.component.scss']
 })
 export class MaterialTableComponent implements AfterViewInit {
+
   displayedColumns: string[] = ['id', 'name', 'progress', 'fruit'];
   dataSource: MatTableDataSource<UserData>;
 
-  @ViewChild(MatPaginator) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatPaginator)
+  paginator!: MatPaginator;
+  @ViewChild(MatSort)
+  sort!: MatSort;
 
   constructor() {
     const users = Array.from({ length: 100 }, (_, k) => createNewUser(k + 1));
@@ -86,17 +93,3 @@ function createNewUser(id: number): UserData {
     fruit: FRUITS[Math.round(Math.random() * (FRUITS.length - 1))],
   };
 }
-
-// @Component({
-//   selector: 'app-material-table',
-//   templateUrl: './material-table.component.html',
-//   styleUrls: ['./material-table.component.scss']
-// })
-// export class MaterialTableComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit(): void {
-//   }
-
-// }
