@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 
 import { AppComponent } from './app.component';
@@ -54,6 +55,7 @@ import { ClipboardComponent } from './components/cdk-features/cdk-components/cli
     ReactiveFormsModule,
     MaterialModule,
     ScrollingModule,
+    CdkAccordionModule,
     ClipboardModule
   ],
   providers: [],

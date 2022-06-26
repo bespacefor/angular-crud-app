@@ -8,13 +8,8 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 })
 export class CDKFeaturesComponent implements OnInit {
   items = Array.from({length: 100000}).map((_, i) => `Item #${i}`);
-  // numbers = [];
 
-  constructor() {
-    // for(let i=0; i < 100; i++) {
-    //   this.numbers.push(i);
-    // }
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }
