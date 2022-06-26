@@ -1,13 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cdk-features',
   templateUrl: './cdk-features.component.html',
-  styleUrls: ['./cdk-features.component.scss']
+  styleUrls: ['./cdk-features.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CDKFeaturesComponent implements OnInit {
+  items = Array.from({length: 100000}).map((_, i) => `Item #${i}`);
+  // numbers = [];
 
-  constructor() { }
+  constructor() {
+    // for(let i=0; i < 100; i++) {
+    //   this.numbers.push(i);
+    // }
+  }
 
   ngOnInit(): void {
   }

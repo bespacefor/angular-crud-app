@@ -5,6 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './material/material.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { ClipboardModule } from '@angular/cdk/clipboard';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -21,6 +23,8 @@ import { EditPanelComponent } from './components/edit-panel/edit-panel.component
 import { ViewPanelComponent } from './components/view-panel/view-panel.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { MaterialTableComponent } from './components/material-table/material-table.component';
+import { AccordionComponent } from './components/cdk-features/cdk-components/accordion/accordion.component';
+import { ClipboardComponent } from './components/cdk-features/cdk-components/clipboard/clipboard.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,9 @@ import { MaterialTableComponent } from './components/material-table/material-tab
     EditPanelComponent,
     ViewPanelComponent,
     FilterPipe,
-    MaterialTableComponent
+    MaterialTableComponent,
+    AccordionComponent,
+    ClipboardComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +52,9 @@ import { MaterialTableComponent } from './components/material-table/material-tab
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MaterialModule
+    MaterialModule,
+    ScrollingModule,
+    ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
