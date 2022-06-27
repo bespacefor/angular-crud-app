@@ -2,13 +2,7 @@ import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
-
-export interface UserData {
-  id: string;
-  name: string;
-  progress: string;
-  fruit: string;
-}
+import { UserData } from 'src/app/interfaces/interface';
 
 const FRUITS: string[] = [
   'blueberry',

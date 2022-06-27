@@ -8,15 +8,9 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 })
 export class ScrollingComponent implements OnInit {
 
-  items = Array.from({ length: 100000 }).map((_, i) => `Generated item #${i}`);
+  items = Array.from({ length: 100 }).map((_, i) => `Generated item #${i+1}`);
 
-  // numbers = [];
-
-  // constructor() {
-  //   for (let i = 0; i < 1000; i++) {
-  //     this.numbers.push(i);
-  //   }
-  // }
+  constructor() { }
 
   ngOnInit(): void {
   }

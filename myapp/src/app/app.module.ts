@@ -9,6 +9,9 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { TextFieldModule } from '@angular/cdk/text-field';
+import { CdkTreeModule } from '@angular/cdk/tree';
+import { CdkTableModule } from '@angular/cdk/table';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -28,6 +31,10 @@ import { MaterialTableComponent } from './components/material-table/material-tab
 import { AccordionComponent } from './components/cdk-features/cdk-components/accordion/accordion.component';
 import { ClipboardComponent } from './components/cdk-features/cdk-components/clipboard/clipboard.component';
 import { DragAndDropComponent } from './components/cdk-features/cdk-components/drag-and-drop/drag-and-drop.component';
+import { TreeComponent } from './components/cdk-features/cdk-components/tree/tree.component';
+import { TextFieldComponent } from './components/cdk-features/cdk-components/text-field/text-field.component';
+import { CdkTableComponent } from './components/cdk-features/cdk-components/cdk-table/cdk-table.component';
+import { ScrollingComponent } from './components/cdk-features/cdk-components/scrolling/scrolling.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +54,11 @@ import { DragAndDropComponent } from './components/cdk-features/cdk-components/d
     MaterialTableComponent,
     AccordionComponent,
     ClipboardComponent,
-    DragAndDropComponent
+    DragAndDropComponent,
+    TreeComponent,
+    TextFieldComponent,
+    CdkTableComponent,
+    ScrollingComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +71,10 @@ import { DragAndDropComponent } from './components/cdk-features/cdk-components/d
     ScrollingModule,
     CdkAccordionModule,
     ClipboardModule,
-    DragDropModule
+    DragDropModule,
+    TextFieldModule,
+    CdkTreeModule,
+    CdkTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

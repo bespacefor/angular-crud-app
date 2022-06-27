@@ -5,59 +5,69 @@ import { FlatNode } from 'src/app/interfaces/interface';
 
 const TREE_DATA: FlatNode[] = [
   {
-    name: 'Fruit',
+    name: 'Staff',
     expandable: true,
     level: 0,
   },
   {
-    name: 'Apple',
-    expandable: false,
+    name: 'Marketing',
+    expandable: true,
     level: 1,
   },
   {
-    name: 'Banana',
+    name: 'Sales',
     expandable: false,
+    level: 2,
+  },
+  {
+    name: 'Advertising',
+    expandable: false,
+    level: 2,
+  },
+  {
+    name: 'Administration',
+    expandable: true,
     level: 1,
   },
   {
-    name: 'Fruit loops',
+    name: 'Finance',
     expandable: false,
+    level: 2,
+  },
+  {
+    name: 'HR',
+    expandable: false,
+    level: 2,
+  },
+  {
+    name: 'Engineering',
+    expandable: true,
     level: 1,
   },
   {
-    name: 'Vegetables',
+    name: 'Development',
+    expandable: false,
+    level: 2,
+  },
+  {
+    name: 'QA',
+    expandable: false,
+    level: 2,
+  },
+  {
+    name: 'Volunteers',
     expandable: true,
     level: 0,
   },
   {
-    name: 'Green',
-    expandable: true,
+    name: 'Harry',
+    expandable: false,
     level: 1,
   },
   {
-    name: 'Broccoli',
+    name: 'Josie',
     expandable: false,
-    level: 2,
-  },
-  {
-    name: 'Brussels sprouts',
-    expandable: false,
-    level: 2,
-  },
-  {
-    name: 'Orange',
-    expandable: true,
     level: 1,
-  },
-  {
-    name: 'Pumpkins',
-    expandable: false,
-    level: 2,
-  },
-  {
-    name: 'Carrots',
-    expandable: false,
-    level: 2,
   },
 ];
 

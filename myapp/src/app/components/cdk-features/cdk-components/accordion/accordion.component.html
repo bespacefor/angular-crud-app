@@ -1,5 +1,4 @@
 <cdk-accordion class="accordion">
-  <h2>Accordion</h2>
   <cdk-accordion-item *ngFor="let item of items; let index = index;" #accordionItem="cdkAccordionItem"
     class="accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
     [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
