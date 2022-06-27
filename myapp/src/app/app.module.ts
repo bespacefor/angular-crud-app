@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { ClipboardModule } from '@angular/cdk/clipboard';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -26,6 +27,7 @@ import { FilterPipe } from './pipes/filter.pipe';
 import { MaterialTableComponent } from './components/material-table/material-table.component';
 import { AccordionComponent } from './components/cdk-features/cdk-components/accordion/accordion.component';
 import { ClipboardComponent } from './components/cdk-features/cdk-components/clipboard/clipboard.component';
+import { DragAndDropComponent } from './components/cdk-features/cdk-components/drag-and-drop/drag-and-drop.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,8 @@ import { ClipboardComponent } from './components/cdk-features/cdk-components/cli
     FilterPipe,
     MaterialTableComponent,
     AccordionComponent,
-    ClipboardComponent
+    ClipboardComponent,
+    DragAndDropComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,8 @@ import { ClipboardComponent } from './components/cdk-features/cdk-components/cli
     MaterialModule,
     ScrollingModule,
     CdkAccordionModule,
-    ClipboardModule
+    ClipboardModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

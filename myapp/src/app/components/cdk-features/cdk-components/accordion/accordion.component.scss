@@ -8,7 +8,7 @@
   border: solid 1px white;
 }
 
-.accordion-item + .accordion-item {
+.accordion-item+.accordion-item {
   border-top: none;
 }
 
@@ -26,10 +26,12 @@
 .accordion-item-header,
 .accordion-item-body {
   padding: 16px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .accordion-item-header:hover {
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .accordion-item:first-child {
