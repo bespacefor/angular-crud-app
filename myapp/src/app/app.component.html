@@ -27,6 +27,7 @@
 <mat-drawer-container class="mat-container" autosize>
   <mat-drawer #drawer class="mat-sidenav" mode="side">
     <h2>{{ date | date: "fullDate" }}</h2>
+    <app-weather-widget></app-weather-widget>
     <button class="toggle-calendar-button" mat-flat-button color="primary" (click)="showFiller = !showFiller"
       mat-raised-button>
       Toggle calendar

@@ -35,6 +35,7 @@ import { TreeComponent } from './components/cdk-features/cdk-components/tree/tre
 import { TextFieldComponent } from './components/cdk-features/cdk-components/text-field/text-field.component';
 import { CdkTableComponent } from './components/cdk-features/cdk-components/cdk-table/cdk-table.component';
 import { ScrollingComponent } from './components/cdk-features/cdk-components/scrolling/scrolling.component';
+import { WeatherWidgetComponent } from './components/weather-widget/weather-widget.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { ScrollingComponent } from './components/cdk-features/cdk-components/scr
     TreeComponent,
     TextFieldComponent,
     CdkTableComponent,
-    ScrollingComponent
+    ScrollingComponent,
+    WeatherWidgetComponent
   ],
   imports: [
     BrowserModule,
