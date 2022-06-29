@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WeatherWidgetComponent implements OnInit {
 
-  WeatherData: any;
+  WeatherData!: any;
 
   constructor() { }
 
   ngOnInit() {
     this.WeatherData = {
       main: {},
-      isDay: true
+      //isDay: true
     };
 
     this.getWeatherData();
@@ -29,10 +29,12 @@ export class WeatherWidgetComponent implements OnInit {
 
   setWeatherData(data: any) {
     this.WeatherData = data;
+    // let isCloud = this.WeatherData.clouds;
+    // console.log(isCloud);
     let sunsetTime = new Date(this.WeatherData.sys.sunset * 1000);
     this.WeatherData.sunset_time = sunsetTime.toLocaleTimeString();
     let currentDate = new Date();
-    this.WeatherData.isDay = (currentDate.getTime() < sunsetTime.getTime());
+    this.WeatherData.isDay = (currentDate.getTime() > sunsetTime.getTime());
     this.WeatherData.temp_celcius = (this.WeatherData.main.temp - 273.15).toFixed(0);
     this.WeatherData.temp_min = (this.WeatherData.main.temp_min - 273.15).toFixed(0);
     this.WeatherData.temp_max = (this.WeatherData.main.temp_max - 273.15).toFixed(0);

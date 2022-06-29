@@ -32,12 +32,12 @@
     </div>
   </div>
 
-  <div class="section">
-    <h3>Address</h3>
+  <div class="section" formGroupName="address">
+    <h2>Address</h2>
 
     <div class="form-control">
       <label>Country</label>
-      <select>
+      <select formControlName="country" (change)="setLocation()" >
         <option value="by">Belarus</option>
         <option value="en">USA</option>
         <option value="po">Poland</option>
@@ -47,18 +47,17 @@
     </div>
 
     <div class="form-control">
-      <input type="text">
+      <label>City</label>
+      <input type="text" formControlName="city" placeholder="City">
     </div>
-
-    <button type="button">Choose country</button>
   </div>
 
   <div class="section">
-    <h3>Skills</h3>
+    <h2>Skills</h2>
 
     <div class="form-control">
       <label></label>
-      <input type="text">
+      <input type="text" placeholder="Humanity">
     </div>
     <button type="button">Add skill</button>
   </div>
