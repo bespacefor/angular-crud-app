@@ -11,15 +11,14 @@ export class WeatherWidgetComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.WeatherData = {
       main: {},
-      // isDay: true
+      isDay: true
     };
 
     this.getWeatherData();
     console.log(this.WeatherData);
-
   }
 
   getWeatherData() {
@@ -34,7 +33,6 @@ export class WeatherWidgetComponent implements OnInit {
     this.WeatherData.sunset_time = sunsetTime.toLocaleTimeString();
     let currentDate = new Date();
     this.WeatherData.isDay = (currentDate.getTime() < sunsetTime.getTime());
-    console.log(this.WeatherData.isDay);
     this.WeatherData.temp_celcius = (this.WeatherData.main.temp - 273.15).toFixed(0);
     this.WeatherData.temp_min = (this.WeatherData.main.temp_min - 273.15).toFixed(0);
     this.WeatherData.temp_max = (this.WeatherData.main.temp_max - 273.15).toFixed(0);

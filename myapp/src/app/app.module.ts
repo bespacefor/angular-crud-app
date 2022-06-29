@@ -24,7 +24,6 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { CDKFeaturesComponent } from './components/cdk-features/cdk-features.component';
 import { AddPanelComponent } from './components/add-panel/add-panel.component';
 
-import { EditPanelComponent } from './components/edit-panel/edit-panel.component';
 import { ViewPanelComponent } from './components/view-panel/view-panel.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { MaterialTableComponent } from './components/material-table/material-table.component';
@@ -36,6 +35,7 @@ import { TextFieldComponent } from './components/cdk-features/cdk-components/tex
 import { CdkTableComponent } from './components/cdk-features/cdk-components/cdk-table/cdk-table.component';
 import { ScrollingComponent } from './components/cdk-features/cdk-components/scrolling/scrolling.component';
 import { WeatherWidgetComponent } from './components/weather-widget/weather-widget.component';
+import { FormsComponent } from './components/forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +49,6 @@ import { WeatherWidgetComponent } from './components/weather-widget/weather-widg
     PageNotFoundComponent,
     CDKFeaturesComponent,
     AddPanelComponent,
-    EditPanelComponent,
     ViewPanelComponent,
     FilterPipe,
     MaterialTableComponent,
@@ -60,7 +59,8 @@ import { WeatherWidgetComponent } from './components/weather-widget/weather-widg
     TextFieldComponent,
     CdkTableComponent,
     ScrollingComponent,
-    WeatherWidgetComponent
+    WeatherWidgetComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,

@@ -9,7 +9,7 @@
 
 <!-- SEARCH PANEL -->
 <h2>Search article</h2>
-<input type="text" [(ngModel)]="search" class="form-control" placeholder="Search title...">
+<input type="text" [(ngModel)]="search" class="form-control" placeholder="Search by title...">
 
 <!-- CARDS -->
 <app-card *ngFor="let c of cards | filter:search" [card]="c" (onRemove)="removeCard($event)"></app-card>
