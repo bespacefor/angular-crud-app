@@ -27,7 +27,8 @@
         Password field cannot be empty
       </span>
       <span *ngIf="form.get('password')!.errors?.['minlength']">
-        Password length must be at least {{form.get('password')!.errors?.['minlength'].requiredLength}} symbols. Now the number of characters is {{form.get('password')!.errors?.['minlength'].actualLength}}
+        Password length must be at least {{form.get('password')!.errors?.['minlength'].requiredLength}} symbols. Now the
+        number of characters is {{form.get('password')!.errors?.['minlength'].actualLength}}
       </span>
     </div>
   </div>
@@ -37,7 +38,7 @@
 
     <div class="form-control">
       <label>Country</label>
-      <select formControlName="country" (change)="setLocation()" >
+      <select formControlName="country" (change)="setLocation()">
         <option value="by">Belarus</option>
         <option value="en">USA</option>
         <option value="po">Poland</option>
@@ -52,14 +53,14 @@
     </div>
   </div>
 
-  <div class="section">
-    <h2>Skills</h2>
+  <div class="section" formGroupName="skills">
+    <h2>Key skills</h2>
 
-    <div class="form-control">
-      <label></label>
-      <input type="text" placeholder="Humanity">
+    <button type="button" (click)="addSkill()">Add skill</button>
+    <div class="form-control" *ngFor="let skill of getControls(); let i = index">
+      <label>Skill {{i+1}}</label>
+      <input type="text" [formControlName]="i" placeholder="New skill">
     </div>
-    <button type="button">Add skill</button>
   </div>
 
   <button type="submit" [disabled]="form.invalid">Submit</button>

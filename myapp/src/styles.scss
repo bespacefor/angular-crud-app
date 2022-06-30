@@ -63,13 +63,6 @@ button {
   &:hover {
     outline: 1px solid white;
   }
-
-  &:disabled {
-    background: rgb(128, 128, 128, 0.5);
-    color: greenyellow;
-    border: 1px solid greenyellow;
-    cursor: not-allowed;
-  }
 }
 
 .navbar {

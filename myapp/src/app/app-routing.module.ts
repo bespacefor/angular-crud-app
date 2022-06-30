@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './components/home/home.component';
 import { BlogComponent } from './components/blog/blog.component';
-import { CreateComponent } from './components/create/create.component';
+import { FormsComponent } from './components/forms/forms.component';
 import { AboutComponent } from './components/about/about.component';
 import { AboutMoreComponent } from './components/about-more/about-more.component';
 import { CDKFeaturesComponent } from './components/cdk-features/cdk-features.component';
@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'blog', component: BlogComponent },
-  { path: 'create', component: CreateComponent },
+  { path: 'forms', component: FormsComponent },
   { path: 'blog/:id', component: ViewPanelComponent },
   {
     path: 'about', component: AboutComponent, children: [
