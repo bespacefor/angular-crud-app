@@ -8,14 +8,14 @@ import { Card } from 'src/app/interfaces/interface';
 })
 export class AddPanelComponent implements OnInit {
 
-  @Output() onAdd: EventEmitter<Card> = new EventEmitter<Card>()
+  @Output() onAdd: EventEmitter<Card> = new EventEmitter<Card>();
 
-  title = ''
-  text = ''
+  title = '';
+  text = '';
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
   addCard() {
@@ -25,10 +25,10 @@ export class AddPanelComponent implements OnInit {
         text: this.text
       }
 
-      this.onAdd.emit(card)
-     // console.log('New card is added: ', card)
+      this.onAdd.emit(card);
+      console.log('New card is added: ', card);
 
-      this.title = this.text = ''
+      this.title = this.text = '';
     }
   }
 

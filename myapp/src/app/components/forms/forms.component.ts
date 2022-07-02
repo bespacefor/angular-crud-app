@@ -8,6 +8,8 @@ import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class FormsComponent implements OnInit {
 
+  skillsBanner = 'https://codebots.com/generated/_blog/crud/how-do-you-secure-your-data-using-crud/How_Do_You_Secure_Your_Data_Using_CRUD_Banner-1400-d67b4af6a.webp';
+
   form!: FormGroup;
 
   constructor() { }
@@ -41,7 +43,7 @@ export class FormsComponent implements OnInit {
   }
 
   setLocation() {
-    const countryCodes: {[index: string]: any } = {
+    const countryCodes: { [index: string]: any } = {
       by: 'Minsk',
       en: 'Washington',
       po: 'Warsaw',
@@ -54,7 +56,7 @@ export class FormsComponent implements OnInit {
     const city = countryCodes[cityKey];
     console.log(city);
 
-    this.form.patchValue({address: {city}});
+    this.form.patchValue({ address: { city } });
   }
 
   addSkill() {

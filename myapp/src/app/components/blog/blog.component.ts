@@ -8,7 +8,9 @@ import { Card } from 'src/app/interfaces/interface';
 })
 export class BlogComponent implements OnInit {
 
-  search = ''
+  blogBanner = 'https://codebots.com/generated/_blog/crud/how-does-crud-relate-to-a-rest-api/DT-672_codebots-blog-lrg-1400-92d95caac.webp';
+
+  search = '';
 
   cards: Card[] = [
     { title: 'Introduction to the Angular Docs', text: 'Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.', id: 1 },
@@ -24,8 +26,8 @@ export class BlogComponent implements OnInit {
   }
 
   updateCards(card: Card) {
-    this.cards.unshift(card)
-    //console.log('Card', card)
+    this.cards.unshift(card);
+    console.log('Card', card);
   }
 
   removeCard(id: number) {

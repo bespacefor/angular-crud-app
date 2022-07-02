@@ -29,12 +29,15 @@ export class WeatherWidgetComponent implements OnInit {
 
   setWeatherData(data: any) {
     this.WeatherData = data;
-    // let isCloud = this.WeatherData.clouds;
-    // console.log(isCloud);
     let sunsetTime = new Date(this.WeatherData.sys.sunset * 1000);
+    let sunriseTime = new Date(this.WeatherData.sys.sunrise * 1000);
     this.WeatherData.sunset_time = sunsetTime.toLocaleTimeString();
+    this.WeatherData.sunrise_time = sunriseTime.toLocaleTimeString();
+    console.log(this.WeatherData.sunset_time);
+    console.log(this.WeatherData.sunrise_time);
+
     let currentDate = new Date();
-    this.WeatherData.isDay = (currentDate.getTime() > sunsetTime.getTime());
+    this.WeatherData.isDay = (currentDate.getTime() < sunsetTime.getTime()) || (currentDate.getTime() > sunriseTime.getTime());
     this.WeatherData.temp_celcius = (this.WeatherData.main.temp - 273.15).toFixed(0);
     this.WeatherData.temp_min = (this.WeatherData.main.temp_min - 273.15).toFixed(0);
     this.WeatherData.temp_max = (this.WeatherData.main.temp_max - 273.15).toFixed(0);

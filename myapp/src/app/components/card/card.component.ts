@@ -9,10 +9,10 @@ import { Card } from 'src/app/interfaces/interface';
 export class CardComponent implements OnChanges, OnInit, OnDestroy {
 
   @Input() card!: Card;
-  @Output() onRemove = new EventEmitter<number>()
+  @Output() onRemove = new EventEmitter<number>();
 
   removeCard() {
-    this.onRemove.emit(this.card.id)
+    this.onRemove.emit(this.card.id);
   }
 
   constructor() { }
