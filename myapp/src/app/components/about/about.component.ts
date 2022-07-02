@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class AboutComponent implements OnInit {
 
   crudBanner = 'https://codebots.com/crud/CRUD_Operations_Banner.png';
+  
   aboutBanner = 'https://codebots.com/generated/_blog/crud/how-do-you-implement-crud-using-graphql/DT-675_codebots-blog-lrg-1400-b164504e0.webp';
 
   constructor(private router: Router) { }

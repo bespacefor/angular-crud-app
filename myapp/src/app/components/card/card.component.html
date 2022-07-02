@@ -3,6 +3,7 @@
     <h2>{{ card.title }}</h2>
     <p>{{ card.text | titlecase }}</p>
   </div>
+
   <div class="section__controls">
     <button [routerLink]="['/blog', 12345]" mat-flat-button color="primary">Details</button>
     <button mat-flat-button color="basic" (click)="removeCard()">Delete</button>

@@ -37,11 +37,8 @@
 }
 
 .cloud {
-  // color: darkviolet;
-  //filter: drop-shadow(1px 1px 5px rgb(148, 0, 211));
-  color: rgb(104, 175, 197);
-  filter: drop-shadow(1px 1px 5px rgb(104, 175, 197));
-  // color: blue;
+  color: darkturquoise;
+  filter: drop-shadow(1px 1px 5px rgb(0, 206, 209));
   animation-name: cloudMovement;
   animation-iteration-count: infinite;
   animation-duration: 7s;
@@ -51,10 +48,10 @@
 
 @keyframes cloudMovement {
   from {
-    margin-left: -55px;
+    margin-left: -40px;
   }
 
   to {
-    margin-left: 65px;
+    margin-left: 60px;
   }
 }

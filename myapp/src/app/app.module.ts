@@ -16,7 +16,6 @@ import { CdkTableModule } from '@angular/cdk/table';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { BlogComponent } from './components/blog/blog.component';
-import { CreateComponent } from './components/create/create.component';
 import { CardComponent } from './components/card/card.component';
 import { AboutComponent } from './components/about/about.component';
 import { AboutMoreComponent } from './components/about-more/about-more.component';
@@ -42,7 +41,6 @@ import { FormsComponent } from './components/forms/forms.component';
     AppComponent,
     HomeComponent,
     BlogComponent,
-    CreateComponent,
     CardComponent,
     AboutComponent,
     AboutMoreComponent,

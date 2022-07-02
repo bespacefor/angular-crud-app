@@ -101,12 +101,15 @@ export class TreeComponent implements OnInit {
 
   shouldRender(node: FlatNode) {
     let parent = this.getParentNode(node);
+
     while (parent) {
       if (!parent.isExpanded) {
         return false;
       }
+
       parent = this.getParentNode(parent);
     }
+
     return true;
   }
 
