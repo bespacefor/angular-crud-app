@@ -1,0 +1,38 @@
+{
+  "employeeInfo": [
+    {
+      "nameSurname": "Den Osman",
+      "title": "Web Designer",
+      "status": "Open to work",
+      "salary": 500,
+      "comment": "Lives in Florida",
+      "id": 1
+    },
+    {
+      "nameSurname": "Harry Nilsson",
+      "title": "WordPress or Shopify Developer",
+      "status": "Intern",
+      "salary": 1000,
+      "comment": "Currently on a business trip",
+      "id": 2
+    },
+    {
+      "nameSurname": "Juicy Fruit",
+      "title": "Front-End Web Developer",
+      "status": "On vacation",
+      "salary": 750,
+      "comment": "Relax, take it easy :)",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
