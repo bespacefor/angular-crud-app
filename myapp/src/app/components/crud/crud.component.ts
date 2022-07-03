@@ -66,6 +66,7 @@ export class CrudComponent implements OnInit {
       .subscribe({
         next: (res) => {
           console.log('Employee info deleted successfully');
+          this.getAllInfo();
         },
         error: (err) => {
           console.error('Error while deleting the record');

@@ -11,6 +11,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
 
 const MaterialComponents = [
   MatButtonModule,
@@ -24,7 +26,9 @@ const MaterialComponents = [
   MatTableModule,
   MatSortModule,
   MatPaginatorModule,
-  MatDialogModule
+  MatDialogModule,
+  MatSelectModule,
+  MatRadioModule
 ];
 
 @NgModule({

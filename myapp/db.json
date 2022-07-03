@@ -23,6 +23,54 @@
       "salary": 750,
       "comment": "Relax, take it easy :)",
       "id": 3
+    },
+    {
+      "nameSurname": "Henry Ford",
+      "title": "Technical Consultant",
+      "status": "Open to work",
+      "salary": 2000,
+      "comment": "Ford: The Universal Car",
+      "id": 4
+    },
+    {
+      "nameSurname": "Elon Musk",
+      "title": "Full-Stack Developer",
+      "status": "Employed",
+      "salary": 300000,
+      "comment": "Boring, itʼs what we do",
+      "id": 5
+    },
+    {
+      "nameSurname": "Jeff Bezos",
+      "title": "Web Analyst",
+      "status": "On vacation",
+      "salary": 138000,
+      "comment": "Smart is beautiful",
+      "id": 6
+    },
+    {
+      "nameSurname": "Bill Gates",
+      "title": "UX Designer/Developer",
+      "status": "Employed",
+      "salary": 1420000,
+      "comment": "Your potential. Our Passion",
+      "id": 7
+    },
+    {
+      "nameSurname": "Steve Jobs",
+      "title": "Web Designer",
+      "status": "Open to work",
+      "salary": 63000000,
+      "comment": "Think different ",
+      "id": 8
+    },
+    {
+      "nameSurname": "Mahatma Gandhi ",
+      "title": "WordPress or Shopify Developer",
+      "status": "Intern",
+      "salary": 0,
+      "comment": "Hakuna Matata (:",
+      "id": 9
     }
   ],
   "comments": [

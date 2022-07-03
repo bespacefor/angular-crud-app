@@ -9,11 +9,13 @@ import { AboutMoreComponent } from './components/about-more/about-more.component
 import { CDKFeaturesComponent } from './components/cdk-features/cdk-features.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ViewPanelComponent } from './components/view-panel/view-panel.component';
+import { CrudComponent } from './components/crud/crud.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'blog', component: BlogComponent },
+  { path: 'crud', component: CrudComponent },
   { path: 'forms', component: FormsComponent },
   { path: 'blog/:id', component: ViewPanelComponent },
   {

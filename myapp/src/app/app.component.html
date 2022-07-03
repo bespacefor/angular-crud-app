@@ -7,6 +7,7 @@
 
       <mat-menu #menu="matMenu">
         <button mat-menu-item (click)="goToBlogPage()">Blog</button>
+        <button mat-menu-item (click)="goToCrudPage()">CRUD</button>
         <button mat-menu-item (click)="goToFormsPage()">Forms</button>
         <button mat-menu-item (click)="goToAboutPage()">About us</button>
         <button mat-menu-item (click)="goToCDKPage()">CDK features</button>
@@ -19,6 +20,7 @@
   <ul class="navbar__list">
     <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/']">Home</a></li>
     <li routerLinkActive="active"><a routerLink="/blog">Blog</a></li>
+    <li routerLinkActive="active"><a routerLink="/crud">CRUD</a></li>
     <li routerLinkActive="active"><a routerLink="/forms">Forms</a></li>
     <li routerLinkActive="active"><a [routerLink]="['/about']">About us</a></li>
     <li routerLinkActive="active"><a routerLink="/cdk">CDK features</a></li>
@@ -65,7 +67,7 @@
         <button class="mat-toggle-button" type="button" mat-flat-button color="accent" (click)="drawer.toggle()">
           Toggle sidenav
         </button>
-        
+
         <button routerLink="/" mat-mini-fab color="primary">
           <mat-icon>home</mat-icon>
         </button>

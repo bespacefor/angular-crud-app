@@ -35,6 +35,8 @@ import { CdkTableComponent } from './components/cdk-features/cdk-components/cdk-
 import { ScrollingComponent } from './components/cdk-features/cdk-components/scrolling/scrolling.component';
 import { WeatherWidgetComponent } from './components/weather-widget/weather-widget.component';
 import { FormsComponent } from './components/forms/forms.component';
+import { CrudComponent } from './components/crud/crud.component';
+import { DialogComponent } from './components/dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +60,9 @@ import { FormsComponent } from './components/forms/forms.component';
     CdkTableComponent,
     ScrollingComponent,
     WeatherWidgetComponent,
-    FormsComponent
+    FormsComponent,
+    CrudComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,

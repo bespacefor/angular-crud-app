@@ -21,6 +21,10 @@ export class AppComponent implements OnInit {
     this.router.navigate(['/blog'])
   }
 
+  goToCrudPage() {
+    this.router.navigate(['/crud'])
+  }
+
   goToFormsPage() {
     this.router.navigate(['/forms'])
   }
