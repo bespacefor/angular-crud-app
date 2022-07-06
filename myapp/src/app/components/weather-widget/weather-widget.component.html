@@ -1,0 +1,19 @@
+<div class="weather__box">
+  <div *ngIf="WeatherData.isDay" class="weather__item">
+    <mat-icon class="sun">light_mode</mat-icon>
+  </div>
+
+  <div *ngIf="!WeatherData.isDay" class="weather__item">
+    <mat-icon class="moon">dark_mode</mat-icon>
+  </div>
+  
+  <div class="weather__item cloud-box">
+    <mat-icon class="cloud">cloud</mat-icon>
+  </div>
+
+  <div class="weather__item weather__item_temp">{{WeatherData.temp_celcius}}°</div>
+  <div class="weather__item">{{WeatherData.temp_min}}° / {{WeatherData.temp_max}}°</div>
+  <div class="weather__item">Feels like: {{WeatherData.temp_feels_like}}°</div>
+  <div class="weather__item weather__item_city">{{WeatherData.name}}</div>
+  <div class="weather__item">Humidity: {{WeatherData.main.humidity}}%</div>
+</div>

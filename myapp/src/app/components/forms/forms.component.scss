@@ -1,0 +1,25 @@
+span {
+  font-size: 12px;
+  background-color: red;
+  color: white;
+  padding: 3px;
+}
+
+input {
+  &.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+
+  &.ng-valid.ng-touched {
+    border: 1px solid white;
+  }
+}
+
+button {
+  &:disabled {
+    background: rgb(128, 128, 128, 0.5);
+    color: greenyellow;
+    border: 1px solid greenyellow;
+    cursor: not-allowed;
+  }
+}

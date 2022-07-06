@@ -1,0 +1,38 @@
+h2 {
+  margin-bottom: 0;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 1rem;
+  width: 100%;
+}
+
+.mat-table {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mat-header-cell {
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: 25%;
+}
+
+.mat-cell {
+  color: white;
+  width: 25%;
+}
+
+.mat-paginator {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.mat-header {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}

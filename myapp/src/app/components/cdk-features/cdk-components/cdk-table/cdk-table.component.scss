@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid yellowgreen;
+  border-collapse: collapse;
+
+  th,
+  td {
+    color: white;
+    padding: 16px;
+    border: 1px solid yellowgreen;
+    min-height: 50px;
+  }
+}
+
+th {
+  text-transform: uppercase;
+  text-align: left;
+}

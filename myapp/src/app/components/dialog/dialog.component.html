@@ -1,0 +1,47 @@
+<h2 mat-dialog-title>Add employee info</h2>
+
+<form [formGroup]="employeeForm">
+  <mat-dialog-content class="mat-typography">
+    <mat-form-field appearance="outline">
+      <mat-label>Name Surname</mat-label>
+      <input formControlName="nameSurname" matInput placeholder="Name Surname">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Title category</mat-label>
+      <mat-select formControlName="title" placeholder="Title">
+        <mat-option value="Front-End Web Developer">Front-End Web Developer</mat-option>
+        <mat-option value="Web Designer">Web Designer</mat-option>
+        <mat-option value="Full-Stack Developer">Full-Stack Developer</mat-option>
+        <mat-option value="WordPress or Shopify Developer">WordPress or Shopify Developer</mat-option>
+        <mat-option value="Web Analyst">Web Analyst</mat-option>
+        <mat-option value="UX Designer/Developer">UX Designer/Developer</mat-option>
+        <mat-option value="Technical Consultant">Technical Consultant</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <label>Pick your working status:</label>
+    <mat-radio-group formControlName="status" class="radio-group">
+      <mat-radio-button class="radio-button" *ngFor="let status of statusList" [value]="status">
+        {{status}}
+      </mat-radio-button>
+    </mat-radio-group>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Salary expectations</mat-label>
+      <input formControlName="salary" matInput type="number" placeholder="Salary expectations">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Comment</mat-label>
+      <textarea formControlName="comment" matInput></textarea>
+    </mat-form-field>
+  </mat-dialog-content>
+</form>
+
+<mat-dialog-actions>
+  <button mat-raised-button color="primary" (click)="addInfo()">{{actionsBtn}}</button>
+  <button mat-stroked-button color="warn" mat-dialog-close>Close</button>
+</mat-dialog-actions>

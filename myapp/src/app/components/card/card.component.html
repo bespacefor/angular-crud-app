@@ -1,0 +1,11 @@
+<div class="section">
+  <div class="section__content">
+    <h2>{{ card.title }}</h2>
+    <p>{{ card.text | titlecase }}</p>
+  </div>
+
+  <div class="section__controls">
+    <button [routerLink]="['/blog', card.id]" mat-flat-button color="primary">Details</button>
+    <button mat-flat-button color="basic" (click)="removeCard()">Delete</button>
+  </div>
+</div>
