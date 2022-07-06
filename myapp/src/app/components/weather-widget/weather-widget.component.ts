@@ -18,7 +18,7 @@ export class WeatherWidgetComponent implements OnInit {
     };
 
     this.getWeatherData();
-    console.log(this.WeatherData);
+    //console.log(this.WeatherData);
   }
 
   getWeatherData() {

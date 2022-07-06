@@ -34,9 +34,9 @@ export class FormsComponent implements OnInit {
 
   submit() {
     if (this.form.valid) {
-      console.log(this.form);
+      //console.log(this.form);
       const formData = { ...this.form.value };
-      console.log(formData);
+      //console.log(formData);
 
       this.form.reset();
     }
@@ -52,9 +52,9 @@ export class FormsComponent implements OnInit {
     }
 
     const cityKey = this.form.get('address')!.get('country')!.value;
-    console.log(cityKey);
+    //console.log(cityKey);
     const city = countryCodes[cityKey];
-    console.log(city);
+    //console.log(city);
 
     this.form.patchValue({ address: { city } });
   }

@@ -4,7 +4,7 @@ import { Card } from 'src/app/interfaces/interface';
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.scss']
+  styleUrls: ['./blog.component.scss'],
 })
 export class BlogComponent implements OnInit {
 
@@ -27,11 +27,11 @@ export class BlogComponent implements OnInit {
 
   updateCards(card: Card) {
     this.cards.unshift(card);
-    console.log('Card', card);
+    //console.log('Card', card);
   }
 
   removeCard(id: number) {
-    console.log('Id to remove', id);
+    //console.log('Id to remove', id);
     this.cards = this.cards.filter(c => c.id !== id)
   }
 

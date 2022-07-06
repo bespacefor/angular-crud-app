@@ -26,7 +26,7 @@ export class AddPanelComponent implements OnInit {
       }
 
       this.onAdd.emit(card);
-      console.log('New card is added: ', card);
+      //console.log('New card is added: ', card);
 
       this.title = this.text = '';
     }
